@@ -1,0 +1,19 @@
+body {
+    background-color: darkred;
+    display: flex;
+    justify-content: center;
+}
+
+#button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#drawspace {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+    background-color: lightgray;
+    margin: 10px;
+}
