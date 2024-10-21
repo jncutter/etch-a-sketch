@@ -10,7 +10,6 @@ function setGrid() {
         box.style.width = dimension + "px";
         box.style.height = dimension + "px";
         grid.appendChild(box);
-        console.log(i);
 
         box.onmouseover = () => {
             box.style.backgroundColor = "black";
@@ -23,3 +22,10 @@ function setGrid() {
 }
 
 setGrid();
+
+document.getElementById("squares").addEventListener("click", () =>{
+    gridSize = Number(prompt("Enter a number of squares (4-100)", ));
+    grid.innerHTML = "";
+
+    setGrid();
+});
